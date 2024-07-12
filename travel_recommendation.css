@@ -51,7 +51,7 @@ nav ul li a:hover {
     outline: none;
 }
 
-.search-bar button {
+#clearBtn {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -64,7 +64,24 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.search-bar button:hover {
+#searchBtn {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 4px 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: grey;
+}
+
+#clearBtn:hover {
     background-color: grey;
 }
 
@@ -82,13 +99,42 @@ main {
     align-items: flex-start;
 }
 
+.socials a {
+    margin-top: 2em;
+}
+
 .hero {
     width: 40%;
     padding: 1em;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+    margin-right: 15em;
+}
+
+#bookBtn {
+    margin-top: 3em;
+    padding: 4px 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#bookBtn:hover{
+    background-color: grey;
 }
 
 .result {
@@ -97,4 +143,35 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.about {
+    padding: 1em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#team div {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 10em;
+}
+
+#team ul {
+    margin-top:5em;
+    list-style-type: none;
+}
+
+#team li {
+    display: inline-block;
+    margin-right: 10px; /* add spacing between items */
 }
