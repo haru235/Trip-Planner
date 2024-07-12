@@ -68,6 +68,11 @@ nav ul li a:hover {
     background-color: grey;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 .hero {
     width: 40%;
     padding: 2em;
@@ -75,6 +80,14 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.result {
+    width: 40%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .social-icons {
