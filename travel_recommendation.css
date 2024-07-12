@@ -73,9 +73,18 @@ main {
     flex-direction: row;
 }
 
+.socials {
+    width: 5%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .hero {
     width: 40%;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,14 +93,8 @@ main {
 
 .result {
     width: 40%;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
 }
