@@ -148,20 +148,26 @@ p {
 
 .results div {
     background-color: white;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .results h3 {
     color:white;
 }
 
+.results img {
+    width: 100%;
+}
+
 .results #name {
     padding: 10px 10px 0 10px;
     font-weight: bold;
+    width: 80%;
 }
 
 .results #desc {
     padding: 0px 10px 10px 10px;
+    width: 80%;
 }
 
 .about {

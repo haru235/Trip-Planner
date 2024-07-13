@@ -56,7 +56,7 @@ function performSearch() {
             results.forEach(result => {
                 resultsContainer.innerHTML += `
                     <div class="search-result">
-                        <img src="${result.imageUrl}" alt="${result.name}">
+                        <img src="images/${result.imageUrl}" alt="${result.name}">
                         <p id="name">${result.name}</p>
                         <p id="desc">${result.description}</p>
                     </div>
@@ -72,5 +72,12 @@ function performSearch() {
     });
 }
 
+function clearResult() {
+    document.getElementById('search').value = '';
+    const resultsContainer = document.getElementById('results').innerHTML = '';
+}
+
 // Add event listener to the search button
 document.getElementById('searchBtn').addEventListener('click', performSearch);
+// Add event listener to the clear button
+document.getElementById('clearBtn').addEventListener('click', clearResult);
