@@ -19,7 +19,6 @@ function performSearch() {
     const keywordCategories = {
         beach: ['beach', 'beaches', 'coast', 'shore', 'seaside'],
         temple: ['temple', 'temples', 'shrine', 'sanctuary'],
-        country: ['country', 'countries', 'nation', 'state', 'city', 'cities'],
     };
 
     const input = document.getElementById('search').value.toLowerCase().trim();
