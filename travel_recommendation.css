@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -96,10 +96,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 5em;
 }
 
 .socials a {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .hero {
