@@ -13,6 +13,8 @@
                     <li><a href="./about_us.html">About Us</a></li>
                     <li><a href="./contact_us.html">Contact Us</a></li>
                 </ul>
+                <div class="search-bar">
+                </div>
             </nav>
         </header>
         <main>
@@ -21,21 +23,24 @@
                 <a href="FB Link"><img src="instagram.webp" width="25px"></a>
                 <a href="FB Link"><img src="youtube.webp" width="25px"></a>
             </section>
-            <section class="hero">
-                <h1>Discover Amazing Destinations</h1>
-                <p>Explore new cultures and breathtaking landscapes</p>
-                <button>Book Now</button>
+            <section class="contact">
+                <h1>Contact Us</h1>
+                <p>Git in touch...</p>
             </section>
-            <section class="result">
-                <div>
-                    <h1>Discover Amazing Destinations</h1>
-                    <p>Explore new cultures and breathtaking landscapes</p>
-                    <button>Book Now</button>
-                </div>
-            </section>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" onclick="sendContact()">Submit</button>
+            </form>
+            <script src="travel_recommendation.js"></script>
         </main>
     
         <footer>
             
         </footer>
     </body>
+</html>
