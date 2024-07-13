@@ -38,7 +38,7 @@ function performSearch() {
             results = results.concat(data.temples);
         }
         if (keywordCategories.country.some(keyword => input.includes(keyword))) {
-            results = results.concat(data.country);
+            results = results.concat(data.countries);
         }
         
         // Display results
