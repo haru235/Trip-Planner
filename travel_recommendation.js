@@ -37,9 +37,17 @@ function performSearch() {
         if (keywordCategories.temple.some(keyword => input.includes(keyword))) {
             results = results.concat(data.temples);
         }
-        if (keywordCategories.country.some(keyword => input.includes(keyword))) {
-            results = results.concat(data.countries);
-        }
+        data.countries.forEach(country => {
+            if (input.includes(country.name)) {
+                results.concat(country.cities);
+            } else {
+                country.cities.forEach(city => {
+                    if (input.includes(city.name.split(',")[0]) {
+                        results.push(city);
+                    }
+                });
+            }
+        });
         
         // Display results
         if (results.length > 0) {
