@@ -37,11 +37,11 @@ function performSearch() {
             results = results.concat(data.temples);
         }
         data.countries.forEach(country => {
-            if (input.includes(country.name)) {
+            if (input.includes(country.name.toLowerCase())) {
                 results.concat(country.cities);
             } else {
                 country.cities.forEach(city => {
-                    if (input.includes(city.name.split(',')[0])) {
+                    if (input.includes(city.name.split(',')[0].toLowerCase())) {
                         results.push(city);
                     }
                 });
