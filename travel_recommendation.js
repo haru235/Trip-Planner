@@ -38,16 +38,7 @@ function performSearch() {
             results = results.concat(data.temples);
         }
         if (keywordCategories.country.some(keyword => input.includes(keyword))) {
-            data.countries.forEach(country => {
-                if (country.name.toLowerCase().includes(input)) {
-                    results.push(country);
-                }
-                country.cities.forEach(city => {
-                    if (city.name.toLowerCase().includes(input)) {
-                        results.push(city);
-                    }
-                });
-            });
+            results = results.concat(data.country);
         }
         
         // Display results
