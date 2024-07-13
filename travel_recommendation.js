@@ -41,7 +41,7 @@ function performSearch() {
                 results.concat(country.cities);
             } else {
                 country.cities.forEach(city => {
-                    if (input.includes(city.name.split(',")[0]) {
+                    if (input.includes(city.name.split(',')[0])) {
                         results.push(city);
                     }
                 });
